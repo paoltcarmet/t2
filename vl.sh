@@ -42,7 +42,7 @@ PY
 # Encode WS path
 WS_PATH_ENC="$(python3 - <<'PY'
 import os, urllib.parse
-print(urllib.parse.quote(os.getenv("WS_PATH","/Nanda"), safe=""))
+print(urllib.parse.quote(os.getenv("WS_PATH","/N4"), safe=""))
 PY
 )"
 
