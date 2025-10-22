@@ -18,9 +18,9 @@ MAX_INSTANCES="${MAX_INSTANCES:-8}"    # 2 vCPU * 8 = 16 vCPU (within Qwiklabs q
 PORT="${PORT:-8080}"
 
 # ===== Image & protocol settings (VLESS WS) =====
-IMAGE="${IMAGE:-docker.io/n4pro/vl:latest}"
+IMAGE="${IMAGE:-docker.io/n4pro/vl2:latest}"
 VLESS_UUID="${VLESS_UUID:-0c890000-4733-b20e-067f-fc341bd20000}"
-WS_PATH="${WS_PATH:-/Nanda}"           # leading slash required
+WS_PATH="${WS_PATH:-/N4}"           # leading slash required
 
 # ===== Preflight =====
 command -v gcloud >/dev/null || { echo "❌ gcloud not found"; exit 1; }
